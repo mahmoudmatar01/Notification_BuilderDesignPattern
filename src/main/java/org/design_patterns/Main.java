@@ -26,5 +26,15 @@ public class Main {
                 .setHasMarkDownLanguage(true)
                 .build();
         System.out.println(slackNotification.toString());
+
+        System.out.println("--------------------------------------------");
+
+        EmailNotification emailNotification = new EmailNotification.EmailNotificationBuilder()
+                .setContent("Email notification content")
+                .setSender("Email notification content")
+                .setRecipient("Email notification content")
+                .setTimestamp("Email notification content")
+                .build();
+        System.out.println(emailNotification.toString());
     }
 }
